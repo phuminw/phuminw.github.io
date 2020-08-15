@@ -53,7 +53,7 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="img/home_button.png" style="width:50px;" alt="">
+                                        <img src="img/home_button.png" style="width: 100px;" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -100,171 +100,56 @@
         </div>
     </header>
     <!-- header-end -->
-
-         <!-- bradcam_area  -->
-         <div class="bradcam_area bradcam_bg_1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="bradcam_text text-center">
-                                <h3>Works</h3>
-                            </div>
-                        </div>
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_area2 bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>DpicNet: A Transfer Learning Approach Towards Intel Multiclass Image Classification Dataset</h3>
                     </div>
                 </div>
             </div>
-            <!--/ bradcam_area  -->
-    <!-- gallery_area start  -->
-    <div class="gallery_area">
-        <div class="container">
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+
+    <div class="projects_details_area">
+        <div class="container pos_up">
             <div class="row justify-content-center">
-                <div class="col-xl-10 col-lg-10">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/stocks.jpg" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>CLI Program</span>
-                                    <a href="ML_Stocks.html"><h4>PyTorch ML Project on Stocks Trends Prediction</h4></a>
-                                </div>
-                            </div>
+                <div class="col-lg-10">
+                    <div class="banner_img">
+                        <img src="img/gallery/transfer_learning.jpeg" style="display:block;width: 557px;margin-left: auto;margin-right: auto;" alt="">
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="details_info">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-md-8 ">
+                        <div class="single_details" style="background-color: #98d7ffc7;display: flex;justify-content: center;align-items: center;">
+                            <img src="img/gallery/docker.png" style="width: 100px;height: auto;">
+                            &nbsp;&nbsp;
+                            <img src="img/gallery/tensorflow.svg" style="width: 100px;height: auto;">
+                            &nbsp;&nbsp;
+                            <img src="img/gallery/keras.svg" style="width: 100px;height: auto;">
+                            &nbsp;&nbsp;
+                            <img src="img/gallery/python.svg" style="width: 100px;height: auto;">
+                            &nbsp;&nbsp;
+                            <img src="img/gallery/tfx.png" style="width: 100px;height: auto;">
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/spotify_youtube.png" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>Web App</span>
-                                    <a href="Playlist_Convert.html"><h4>Youtube - Spotify Playlist Converter</h4></a>
-                                </div>
-                            </div>
+                        <div class="single_details">
+                            <h3>Overview</h3>
+                            <p>DpicNet is a deep convolutional neural network for image classification trained towards <a href="https://www.kaggle.com/puneet6060/intel-image-classification" style="color: #989bdf;">Intel Multi-class Image Classification Dataset</a>. DpicNet comprises of convolutional part where features are extracted from images and classification part where features are passed into fully-connected or dense network to classify. As DpicNet follows transfer learining procedure, the convolutional part is transferred from existing deep neural network model trained on large-scale image classification such as ImageNet dataset. Xception is chosen and its convolutional is transferred and freezed, so that the weights of the convolutional part is not trained. The top part, fully-connected or dense network, is newly constructed for the purpose of training towards <a href="https://www.kaggle.com/puneet6060/intel-image-classification" style="color: #989bdf;">Intel Multi-class Image Classification Dataset</a>. Many settings for the fully-connected network were experimented, but the best setting can achieve approcimately 98% accuracy on training dataset and 86% accuracy on testing dataset. The best setting is served using Tensorflow Serving along with Flask. More details are available on Github by following the project link below.</p>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/banking.png" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>Java Swing App</span>
-                                    <a href="Fancy_Bank.html"><h4>Bank Systems with UI</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/finance.jpg" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>Web App</span>
-                                    <a href="FinC.html"><h4>FinC - Personal Finance Web Application</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/transfer_learning.jpeg" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>CLI Program</span>
-                                    <a href="DpicNet.html"><h4>DpicNet: A Transfer Learning Approach Towards Intel Multiclass Image Classification Dataset</h4></a>
-                                </div>
-                            </div>
+                        <div class="button_link">
+                            <a href="https://github.com/phuminw/DpicNet/" class="boxed-btn3-line">Project Link</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- gallery_area end  -->
-
-        <!-- testimonial_area  -->
-        <!-- <div class="testimonial_area ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="section_title">
-                            <h3>What Clients say</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="testmonial_active owl-carousel">
-                            <div class="single_carousel">
-                                <div class="row">
-                                    <div class="col-xl-9 col-md-9">
-                                        <div class="single_testmonial">
-                                            <p>“There are many variations of passages of Lorem Ipsum available, but the majority
-                                                have suffered alteration in some form by injected humour or randomised words
-                                                which don’t look even slightly believable. If you are going to use a passage.
-                                            </p>
-                                            <div class="testmonial_author">
-                                                <div class="thumb">
-                                                    <img src="img/case/testmonial.png" alt="">
-                                                </div>
-                                                <div class="author_name">
-                                                    <h3>Kalvin Piterson</h3>
-                                                    <span>Business Owner</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single_carousel">
-                                <div class="row">
-                                    <div class="col-xl-9 col-md-9">
-                                        <div class="single_testmonial">
-                                            <p>“There are many variations of passages of Lorem Ipsum available, but the majority
-                                                have suffered alteration in some form by injected humour or randomised words
-                                                which don’t look even slightly believable. If you are going to use a passage.
-                                            </p>
-                                            <div class="testmonial_author">
-                                                <div class="thumb">
-                                                    <img src="img/case/testmonial.png" alt="">
-                                                </div>
-                                                <div class="author_name">
-                                                    <h3>Kalvin Piterson</h3>
-                                                    <span>Business Owner</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single_carousel">
-                                <div class="row">
-                                    <div class="col-xl-9 col-md-9">
-                                        <div class="single_testmonial">
-                                            <p>“There are many variations of passages of Lorem Ipsum available, but the majority
-                                                have suffered alteration in some form by injected humour or randomised words
-                                                which don’t look even slightly believable. If you are going to use a passage.
-                                            </p>
-                                            <div class="testmonial_author">
-                                                <div class="thumb">
-                                                    <img src="img/case/testmonial.png" alt="">
-                                                </div>
-                                                <div class="author_name">
-                                                    <h3>Kalvin Piterson</h3>
-                                                    <span>Business Owner</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- /testimonial_area  -->
-    
 
     <!-- footer start -->
     <footer class="footer">
